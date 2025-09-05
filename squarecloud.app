@@ -1,0 +1,5 @@
+DISPLAY_NAME=Jirou Maid
+MAIN=main.py
+MEMORY=256
+VERSION=recommended
+DESCRIPTION=Jirou Maid
