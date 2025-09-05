@@ -20,7 +20,7 @@ class music(commands.Cog):
 
         # 2d array containing [song, channel]
         self.music_queue = []
-        self.YDL_OPTIONS = {'format': 'bestaudio', 'noplaylist':'True', 'cookiefile': '../www.youtube.com_cookies.txt'}
+        self.YDL_OPTIONS = {'format': 'bestaudio', 'noplaylist':'True', 'cookiefile': './www.youtube.com_cookies.txt'}
         self.FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 'options': '-vn'}
 
         self.vc = ""
@@ -172,3 +172,4 @@ async def setup(client):
     await client.add_cog(music(client))
 
     
+
